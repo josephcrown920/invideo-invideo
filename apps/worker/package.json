@@ -1,0 +1,28 @@
+{
+  "name": "@lantern/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@lantern/agent": "workspace:*",
+    "@lantern/config": "workspace:*",
+    "@lantern/credits": "workspace:*",
+    "@lantern/db": "workspace:*",
+    "@lantern/editor": "workspace:*",
+    "@lantern/observability": "workspace:*",
+    "@lantern/providers": "workspace:*",
+    "@lantern/queue": "workspace:*",
+    "@lantern/storage": "workspace:*",
+    "drizzle-orm": "^0.38.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
